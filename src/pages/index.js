@@ -10,10 +10,10 @@ export default function Home() {
         Hello to Home page <span className="text-red-500">{router.locale}</span>{" "}
       </h1>
       <nav className="flex gap-3 justify-center items-center">
-        <Link href="login" className="text-blue-500 underline">
+        <Link href="create/login" className="text-blue-500 underline">
           login
         </Link>
-        <Link href="auth/signup" className="text-blue-500 underline">
+        <Link href="create/auth/signup" className="text-blue-500 underline">
           sign up
         </Link>
       </nav>
