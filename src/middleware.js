@@ -48,13 +48,13 @@ export function middleware(req) {
     (isDev && currentHost === DEFAULT_LOCAL_WILDCARD_DOMAIN)
   ) {
     return NextResponse.rewrite(
-      new URL(`${locale}/${appDomain}${pathname}`, req.url)
+      new URL(`/${locale}/${appDomain}${pathname}`, req.url)
     );
-  }
+  } 
 
   // Rewrite to the current hostname under the pages/_sites folder
   // The main logic component will happen in pages/_sites/[site]/index.tsx
   return NextResponse.rewrite(
-    new URL(`${locale}/_sites/${currentHost}${pathname}`, req.url)
+    new URL(`/${locale}/_sites/${currentHost}${pathname}`, req.url)
   );
 }
