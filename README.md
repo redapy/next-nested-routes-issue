@@ -1,3 +1,7 @@
+## Issue
+- Visiting a nested route inside the `create` route gives 404. 
+- Example: Visiting /login is fine, but /auth/signup will result in 404
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
